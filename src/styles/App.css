@@ -1,0 +1,148 @@
+.App {
+	font-family: "Karla", sans-serif;
+	max-width: 1100px;
+	width: 100vw;
+	margin: 2% auto;
+	box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	 background-color: #f6fdfc;
+
+	 
+
+}
+
+/* Header Component */
+header {
+	display: flex;
+	align-items: center;
+	height: 4em;
+	background-color: #00aeef;
+
+	
+	background-image: linear-gradient(315deg,#00aeef 0%, #2d388a   80%);
+	
+	color:#e9f1f0;
+	padding: 1.2em;
+	border-radius: 10px;
+}
+
+.header-image {
+	height: 100%;
+	
+	margin-right: 0.5em;
+}
+
+.header-title {
+	font-size: 1.30rem;
+	margin-right: auto;
+	font-family: serif;
+}
+  .header--project{
+	font-size: 30px;
+	font-family: serif;
+
+}
+/* Header Component */
+
+/* Meme Component */
+main {
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+}
+
+.form {
+	display: grid;
+	grid-template: 50px 50px / 1fr 1fr;
+	gap: 1.5em;
+}
+
+.form-input {
+	font-family: "Karla", sans-serif;
+	border-radius: 5px;
+	border: 1px solid #D5D4D8;
+	text-indent: 5px;
+	
+}
+
+.form-button {
+	grid-column: 1 / -1;
+	background-image: linear-gradient(315deg,#00aeef 0%, #2d388a   80%);
+	font-family: "Karla", sans-serif;
+	border-radius: 5px;
+	font-weight: 500;
+	color:#e9f1f0;
+	border: none;
+	cursor: pointer;
+}
+
+.meme {
+	position: relative;
+	margin-top: 2em;
+	align-self: center;
+}
+
+.meme-image {
+	max-width: 100%;
+}
+
+.meme-text {
+	position: absolute;
+	width: 80%;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 15px 0;
+	padding: 0 5px;
+    font-family:serif;
+	font-size: 3.5em;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 1px;
+	text-shadow:
+		2px 2px 0 #000,
+		-2px -2px 0 #000,
+		2px -2px 0 #000,
+		-2px 2px 0 #000,
+		0 2px 0 #000,
+		2px 0 0 #000,
+		0 -2px 0 #000,
+		-2px 0 0 #000,
+		2px 2px 5px #000;
+}
+
+.bottom {
+	bottom: 0;
+}
+
+.top {
+	top: 0;
+}
+
+/* Meme Component */
+
+/* Footer Component */
+footer {
+	text-align: center;
+	font-size: 1em;
+	color:black;
+	 background-color: #c7e3ee;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-top: 2px solid #e7e5ee;
+	margin-top: 1em;
+}
+
+footer p {
+	padding: 0.7em 0;
+	margin: 0;
+}
+
+/* Footer Component */
+
+
+@media only screen and (max-width: 600px) {
+	.meme-text {
+		font-size: 1.55em;
+	}
+}
